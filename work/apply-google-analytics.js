@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const outDir = path.join(__dirname, "..", "outputs");
+const outDir = path.join(__dirname, "..", "public");
 const GA_SNIPPET = `    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DQYZ36HTRY"></script>
     <script>

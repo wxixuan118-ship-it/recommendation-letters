@@ -323,7 +323,7 @@ const pages = [
   }
 ];
 
-const outDir = path.join(__dirname, "..", "outputs", "pages");
+const outDir = path.join(__dirname, "..", "public", "pages");
 fs.mkdirSync(outDir, { recursive: true });
 
 function escapeHtml(value) {
@@ -617,6 +617,6 @@ ${pages.map((page) => `  <url><loc>${BASE_URL}/pages/${page.slug}.html</loc></ur
   <url><loc>${BASE_URL}/blog.html</loc></url>
 </urlset>
 `;
-fs.writeFileSync(path.join(__dirname, "..", "outputs", "sitemap.xml"), sitemap);
+fs.writeFileSync(path.join(__dirname, "..", "public", "sitemap.xml"), sitemap);
 
 console.log(`Generated ${pages.length} SEO pages and sitemap in ${outDir}`);

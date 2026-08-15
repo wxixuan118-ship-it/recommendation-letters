@@ -3,7 +3,7 @@ const path = require("path");
 const { pages } = require("./keyword-silo-data");
 
 const BASE_URL = "https://recommendation-letters.com";
-const outputRoot = path.join(__dirname, "..", "outputs");
+const outputRoot = path.join(__dirname, "..", "public");
 const formatPages = pages.filter((page) => page.cluster === "format");
 const questionPages = pages.filter((page) => page.cluster === "questions");
 const writingPages = pages.filter((page) => page.cluster === "writing");

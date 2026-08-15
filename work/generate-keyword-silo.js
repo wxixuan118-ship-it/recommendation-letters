@@ -3,7 +3,7 @@ const path = require("path");
 const { clusters, pages } = require("./keyword-silo-data");
 
 const BASE_URL = "https://recommendation-letters.com";
-const outputRoot = path.join(__dirname, "..", "outputs");
+const outputRoot = path.join(__dirname, "..", "public");
 const indexPath = path.join(outputRoot, "index.html");
 const generatedClusters = new Set(["core", "audience", "recommender", "application", "writing"]);
 const categoryClusters = new Set(["audience", "recommender", "application"]);

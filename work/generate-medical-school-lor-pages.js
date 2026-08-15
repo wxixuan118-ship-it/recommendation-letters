@@ -8,7 +8,7 @@ const fs = require("fs");
 const path = require("path");
 
 const BASE_URL = "https://recommendation-letters.com";
-const outDir = path.join(__dirname, "..", "outputs", "medical-schools");
+const outDir = path.join(__dirname, "..", "public", "medical-schools");
 const GA_SNIPPET = `    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DQYZ36HTRY"></script>
     <script>
@@ -566,7 +566,7 @@ ${GA_SNIPPET}
 }
 
 // Generate all pages
-const medSchoolsDir = path.join(__dirname, "..", "outputs", "medical-schools");
+const medSchoolsDir = path.join(__dirname, "..", "public", "medical-schools");
 fs.mkdirSync(medSchoolsDir, { recursive: true });
 
 schools.forEach(school => {

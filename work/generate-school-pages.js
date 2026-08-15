@@ -3,7 +3,7 @@ const path = require("path");
 const { medicalSchools, undergradSchools } = require("./school-data");
 
 const BASE_URL = "https://recommendation-letters.com";
-const outDir = path.join(__dirname, "..", "outputs");
+const outDir = path.join(__dirname, "..", "public");
 const medDir = path.join(outDir, "schools", "med");
 const undergradDir = path.join(outDir, "schools");
 const GA_SNIPPET = `    <!-- Google tag (gtag.js) -->

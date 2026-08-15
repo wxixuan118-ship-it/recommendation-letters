@@ -3,7 +3,7 @@ const path = require("path");
 const { pages: keywordPages } = require("./keyword-silo-data");
 
 const BASE_URL = "https://recommendation-letters.com";
-const outDir = path.join(__dirname, "..", "outputs");
+const outDir = path.join(__dirname, "..", "public");
 const blogDir = path.join(outDir, "blog");
 const GA_SNIPPET = `    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DQYZ36HTRY"></script>
