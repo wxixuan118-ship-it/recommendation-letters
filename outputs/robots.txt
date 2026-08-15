@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://recommendation-letters.com/sitemap.xml
+
