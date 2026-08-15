@@ -175,7 +175,15 @@ function keywordTitle(value) {
 
 function nav(prefix) {
   return `<nav class="topnav" aria-label="Primary navigation">
-        <a href="${prefix}index.html#templates" aria-current="page">Letters of Recommendation</a>
+        <a href="${prefix}index.html#templates">Letters of Recommendation</a>
+        <details class="nav-dropdown">
+          <summary>Blog</summary>
+          <div class="nav-menu">
+            <a href="${prefix}medical-schools/">School Requirements</a>
+            <a href="${prefix}blog.html">All Articles</a>
+          </div>
+        </details>
+        <a href="${prefix}recommendation-letter-faq/">FAQ</a>
         <a href="${prefix}cover-letter.html">Cover Letter</a>
         <a href="${prefix}resignation.html">Resignation</a>
       </nav>`;

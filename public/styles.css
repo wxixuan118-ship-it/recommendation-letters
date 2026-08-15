@@ -115,12 +115,25 @@ select {
 
 .nav-dropdown {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .nav-dropdown summary {
   list-style: none;
   cursor: pointer;
-  font-weight: 700;
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 8px 11px;
+  white-space: nowrap;
+  font-weight: 500;
+  color: var(--muted);
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    background-color 160ms ease,
+    box-shadow 160ms ease;
 }
 
 .nav-dropdown summary::-webkit-details-marker {
@@ -128,9 +141,16 @@ select {
 }
 
 .nav-dropdown summary::after {
-  content: "v";
-  margin-left: 5px;
-  font-size: 0.7rem;
+  content: "›";
+  margin-left: 4px;
+  font-size: 0.85rem;
+  display: inline-block;
+  rotate: 90deg;
+  transition: rotate 160ms ease;
+}
+
+.nav-dropdown[open] summary::after {
+  rotate: 270deg;
 }
 
 .nav-dropdown[open] summary,

@@ -168,6 +168,14 @@ const resignationArticle = [
 function navHtml(prefix = ".", activeTab = "recommendation") {
   return `<nav class="topnav" aria-label="Primary navigation">
         <a href="${prefix}/index.html#templates"${activeTab === "recommendation" ? ' aria-current="page"' : ""}>Letters of Recommendation</a>
+        <details class="nav-dropdown">
+          <summary>Blog</summary>
+          <div class="nav-menu">
+            <a href="${prefix}/medical-schools/">School Requirements</a>
+            <a href="${prefix}/blog.html">All Articles</a>
+          </div>
+        </details>
+        <a href="${prefix}/recommendation-letter-faq/"${activeTab === "faq" ? ' aria-current="page"' : ""}>FAQ</a>
         <a href="${prefix}/cover-letter.html"${activeTab === "cover-letter" ? ' aria-current="page"' : ""}>Cover Letter</a>
         <a href="${prefix}/resignation.html"${activeTab === "resignation" ? ' aria-current="page"' : ""}>Resignation</a>
       </nav>`;
