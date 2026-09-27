@@ -186,6 +186,66 @@ select {
   color: var(--accent-dark);
 }
 
+.nav-mega {
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 0;
+  z-index: 40;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(180px, 1fr));
+  gap: 16px;
+  min-width: 760px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 20px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.nav-mega-col {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.nav-mega-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin-bottom: 4px;
+  padding: 4px 8px;
+}
+
+.nav-mega a {
+  border-radius: 6px;
+  padding: 8px 8px;
+  color: var(--ink);
+  font-size: 0.9rem;
+  line-height: 1.3;
+  white-space: normal;
+}
+
+.nav-mega a:hover {
+  background: #e5f0ee;
+  color: var(--accent-dark);
+}
+
+@media (max-width: 900px) {
+  .nav-mega {
+    grid-template-columns: repeat(2, 1fr);
+    min-width: 420px;
+  }
+}
+
+@media (max-width: 560px) {
+  .nav-mega {
+    grid-template-columns: 1fr;
+    min-width: 280px;
+  }
+}
+
 main {
   width: min(1180px, calc(100% - 32px));
   margin: 0 auto 64px;
@@ -799,6 +859,26 @@ dd {
 .seo-copy h3 {
   margin: 0 0 8px;
   font-size: 1.05rem;
+}
+
+.content-image {
+  margin: 24px 0;
+  text-align: center;
+}
+
+.content-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.content-image figcaption {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-style: italic;
 }
 
 .article-body {
@@ -1744,6 +1824,23 @@ dd {
   color: var(--accent-dark);
   font-size: 0.82rem;
   font-weight: 760;
+}
+
+.footer-template-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 18px;
+}
+
+.footer-template-grid a {
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+.footer-template-grid a:hover {
+  color: var(--accent-dark);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .footer-links a:hover {

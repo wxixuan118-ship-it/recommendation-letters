@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Landlord Recommendation Letter Template preview">
+  <rect width="640" height="360" fill="#f8fafc"/>
+  <!-- Document paper -->
+  <rect x="120" y="30" width="400" height="300" fill="#ffffff" stroke="#d9dee7" stroke-width="1" rx="4"/>
+  <!-- Header -->
+  <rect x="150" y="55" width="200" height="10" fill="#1f4e79" rx="2"/>
+  <rect x="150" y="72" width="140" height="6" fill="#6b7280" rx="2"/>
+  <rect x="150" y="85" width="160" height="5" fill="#9ca3af" rx="2"/>
+  <!-- Divider -->
+  <rect x="150" y="105" width="340" height="1" fill="#d9dee7"/>
+  <!-- Salutation -->
+  <rect x="150" y="120" width="110" height="7" fill="#374151" rx="2"/>
+  <!-- Body paragraphs -->
+  <rect x="150" y="140" width="340" height="5" fill="#4b5563" rx="2"/>
+  <rect x="150" y="150" width="335" height="5" fill="#4b5563" rx="2"/>
+  <rect x="150" y="160" width="320" height="5" fill="#4b5563" rx="2"/>
+  <rect x="150" y="170" width="310" height="5" fill="#4b5563" rx="2"/>
+  <rect x="150" y="180" width="290" height="5" fill="#4b5563" rx="2"/>
+
+  <rect x="150" y="200" width="340" height="5" fill="#4b5563" rx="2"/>
+  <rect x="150" y="210" width="330" height="5" fill="#4b5563" rx="2"/>
+  <rect x="150" y="220" width="300" height="5" fill="#4b5563" rx="2"/>
+  <rect x="150" y="230" width="320" height="5" fill="#4b5563" rx="2"/>
+  <rect x="150" y="240" width="280" height="5" fill="#4b5563" rx="2"/>
+  <!-- Signature area -->
+  <rect x="350" y="270" width="120" height="1" fill="#374151"/>
+  <rect x="350" y="280" width="90" height="6" fill="#374151" rx="2"/>
+  <rect x="350" y="293" width="110" height="5" fill="#6b7280" rx="2"/>
+  <!-- Label -->
+  <text x="320" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">Landlord Rec Letter Template</text>
+</svg>
