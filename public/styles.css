@@ -192,9 +192,9 @@ select {
   left: 0;
   z-index: 40;
   display: grid;
-  grid-template-columns: repeat(4, minmax(180px, 1fr));
+  grid-template-columns: 200px 200px 200px 200px;
   gap: 16px;
-  min-width: 760px;
+  width: 860px;
   border: 1px solid var(--line);
   border-radius: 10px;
   padding: 20px;
@@ -232,17 +232,19 @@ select {
   color: var(--accent-dark);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 960px) {
   .nav-mega {
-    grid-template-columns: repeat(2, 1fr);
-    min-width: 420px;
+    grid-template-columns: 200px 200px;
+    width: 460px;
   }
 }
 
 @media (max-width: 560px) {
   .nav-mega {
     grid-template-columns: 1fr;
-    min-width: 280px;
+    width: 300px;
+    left: auto;
+    right: 0;
   }
 }
 
